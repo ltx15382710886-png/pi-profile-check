@@ -1,0 +1,19 @@
+{
+  "name": "pi-profile-check",
+  "version": "0.2.0",
+  "description": "Verify a Pi agent profile: declared packages, contributed skills, what Pi actually loads, and drift against a baseline.",
+  "license": "MIT",
+  "type": "module",
+  "bin": {
+    "pi-profile-check": "./bin/pi-profile-check.mjs"
+  },
+  "files": [
+    "bin"
+  ],
+  "scripts": {
+    "test": "sh test/run-tests.sh"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

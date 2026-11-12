@@ -1,0 +1,26 @@
+agent dir  <agentDir>   (PI_CODING_AGENT_DIR)
+settings   <agentDir>/settings.json
+pi cli     <pi-cli>   v1.4.0 (agent-binaries (max version))
+
+packages (5)
+  <shared>/node_modules/@machine-made/pi-effort
+    → <shared>/node_modules/@machine-made/pi-effort  [0.1.2]  0 skills
+  <shared>/node_modules/pi-web-access
+    → <shared>/node_modules/pi-web-access  [0.46.0]  0 skills
+  npm:@tw93/waza@3.42.0
+    → <agentDir>/npm/node_modules/@tw93/waza  [3.42.0 (pinned)]  8 skills
+  <shared>/node_modules/pstack-claude-mirror
+    → <shared>/node_modules/pstack-claude-mirror  [0.9.136]  67 skills
+  <shared>/node_modules/nowledge-mem-pi
+    → <shared>/node_modules/nowledge-mem-pi  [0.8.14]  5 skills
+
+extensions via LODY_PI_EXTENSIONS (4)
+  ok   <shared>/node_modules/pstack-claude-mirror/plugins/pstack/pi/index.ts
+  ok   <shared>/node_modules/@machine-made/pi-effort/index.ts
+  ok   <shared>/node_modules/pi-web-access/dist/index.js
+  ok   <shared>/node_modules/nowledge-mem-pi/extensions/nowledge-mem.ts
+
+skills: 清单 80 · 实测 80
+note: settings.skills 有 1 条本地条目（不累加进清单，只影响实测）：!<home>/.agents/skills/**
+
+verdict    OK
